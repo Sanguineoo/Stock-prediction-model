@@ -1,0 +1,85 @@
+html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+body{
+    background-color: rgb(27, 32, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.box{
+    background-color: rgb(56, 56, 137);
+    max-width: 18%;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center; 
+    color: cornsilk;
+    float: left;
+    padding: 1rem 10px;
+}
+.box:hover{
+    background-color: rgb(24, 43, 96);
+}
+select{
+    margin-bottom: 10px;
+    margin-top: 32%;
+    background-color: cornsilk;
+}
+option{
+    background-color: rgb(56, 56, 137);
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 75px;
+}
+.Submit{
+    font-size: 20px;
+    height: 55px;
+    width: 40%;
+    border-radius: 40px;
+    /* border-radius: 40px 40px 0 0; */
+}
+.Submit:hover{
+    background-color:rgb(153, 255, 0);
+}
+.Submit:active{
+    background-color: rgb(120, 194, 10);
+    
+}
+
+.result{
+    background-color: cornsilk;
+    color: black;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 55%;
+    /* height: 190px; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 1rem;
+    line-height: 30px;
+
+}
+.smallcon{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.select{
+    padding: 5px 7.5px;
+}

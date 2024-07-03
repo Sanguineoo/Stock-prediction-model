@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/stock app.css">
+            <title>Stock price page</title>
+    </head>
+
+    <body>
+        <form action="/generate", method="POST" id="container">
+            <div class="smallcon">
+                <div class="box"><h2>Stock Exchange💹</h2>
+                    <select name="Stock_exchange_market" required class="select">
+                        <!-- <option value="Stock market">Select market</option> -->
+                        <option value="NASDAQ">NASDAQ</option>
+                    </select>
+                </div>
+                <div class="box"><h2>Company name🏭</h2>
+                    <select name="Company name" class="select" >
+                        <option value="None">Select Company</option>
+                        <option value="MSFT">Microsoft</option>
+                        <option value="AAPL">Apple</option>
+                        <option value="AMZN">Amazon</option>
+                        <option value="GOOGL">Google</option>
+                        <option value="PG">Procter & Gamble</option>
+                        <option value="TSLA">Tesla</option>
+                        <option value="JPM">JPMorgan</option>
+                        <option value="JNJ">Johnson and Johnson</option>
+                    </select>            
+                </div>
+                <div class="box"><h2>Forecast metric📅</h2>
+                    <select name="Forecast metric" required class="select">
+                        <option value="metric">Forecast metric</option>
+                        <option value="Days">Days</option>
+                        <option value="Weeks">Weeks</option>
+                    </select>
+                    <input type="number" name="Date number" min="1" required style="width: 50%; height: 25px;"> 
+                </div> 
+            </div>
+            <input type="submit" value="Forecast🚀" class="Submit">
+            
+        </form>
+
+        <div class="result">{{positive_pred}} {{negative_pred}} {{error_message}} {{default_text}}</div>
+    </body>
+</html>
